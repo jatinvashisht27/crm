@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Add CV{% endblock title %}
+{% block main_content %}
+{% include 'navbar.html' %}
+
+
+<section class="container">
+    <div class="row justify-content-around text-center mt-10">
+        <div class="col-sm-5">
+            <h1>CRM CRUD</h1>
+        </div>
+    </div>
+
+    <div class="row justify-content-around mt-1">
+        <div class="col-sm-8">
+            <form action="" method="POST" enctype="multipart/form-data" class="bg-white p-3 rounded shadow">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="Submit" class="btn btn-dark">
+            </form>    
+        </div>
+    </div>
+</section>
+
+{% endblock main_content %}

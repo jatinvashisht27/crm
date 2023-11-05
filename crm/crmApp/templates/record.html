@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Record{% endblock title %}
+{% block main_content %}
+{% include 'navbar.html' %}
+
+<br>
+
+<div class="card">
+    <div class=" card-header">
+        <h5 class="card-title">CV Record {{cv_data.mobID}}:</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+            <strong>mobID:</strong>{{cv_data.mobID}}<br>
+            <strong>Group1:</strong>{{cv_data.group1}}<br>
+            <strong>Salutation:</strong>{{cv_data.salutation}}<br>
+            <strong>First Name:</strong>{{cv_data.firstname}}<br>
+            <strong>Primary Number:</strong>{{cv_data.primaryNumber}}<br>
+            <strong>Primary Mail:</strong>{{cv_data.primaryMail}}<br>
+            <strong>City:</strong>{{cv_data.city}}<br>
+            <strong>Country:</strong>{{cv_data.country}}<br>
+            <strong>Pincode:</strong>{{cv_data.pincode}}<br>
+            <strong>Image1:</strong>{{cv_data.image1}}<br>
+            <strong>Do not call:</strong>{{cv_data.donotCall}}<br>
+            <strong>Created at:</strong>{{cv_data.created_at}}<br>
+            <strong>Updated at:</strong>{{cv_data.updated_at}}<br>
+            <strong>Updated by:</strong>{{cv_data.updated_by}}<br>
+        </p>
+    </div>
+</div>
+<br>
+<div class="row justify-content-around">
+    <a href="{% url 'home' %}" class="btn btn-sm btn-dark">Go back</a>
+</div>
+
+{% endblock main_content %}

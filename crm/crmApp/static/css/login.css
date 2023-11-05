@@ -1,0 +1,74 @@
+.wrapper {
+  position: relative;
+  width: 350px;
+  max-height: auto;
+  margin: 0 auto;
+  background: white;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
+}
+
+h2 {
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+  z-index: 5;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin #toggleBtn {
+  position: absolute;
+  top: 128px;
+  right: 25px;
+  width: 34px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-signin #toggleBtn::before {
+  content: '\f06e';
+  font-family: fontAwesome;
+}
+
+.form-signin #toggleBtn.hide::before {
+  content: '\f070';
+  font-family: fontAwesome;
+}
+
+.custom-alert {
+    position: absolute;
+    top: 0;
+}

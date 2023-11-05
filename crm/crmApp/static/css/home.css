@@ -1,0 +1,46 @@
+table {
+    border: 1px solid black;
+
+    border-collapse: separate;
+    border-spacing: 0px;
+    min-width: max-content;
+}
+
+th {
+    position : sticky;
+    top: 0px;
+    
+    background-color: teal; 
+    color: wheat;
+
+}
+ 
+.table-wrapper {
+    max-height: 450px;
+    overflow-y: scroll;
+
+    margin: 20px;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.outer-wrapper {
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+
+    margin: 20px;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.card{
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+    
+    margin: auto;
+    border-radius: 5px;
+    max-width: 30%
+}

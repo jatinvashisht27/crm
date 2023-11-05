@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}Login{% endblock title %}
+{% load static %}
+{% block main_content %}
+
+
+<body class="text-center">
+
+	<div class="wrapper">
+		<main class="form-signin">
+			<form action="/home/" method="post">
+				{% csrf_token %}
+				<h2 class="h2">Login</h2>
+
+				<div class="form-floating">
+					<input type="text" class="form-control" id="floatingInput" name="username" placeholder="Username" autocomplete="on">
+				</div>
+				<br>
+				<div class="form-floating">
+					<input type="password" class="form-control" id="floatingPassword" name="password"
+						placeholder="Password">
+					<span id="toggleBtn"></span>
+				</div>
+
+				<!-- <div class="checkbox mb-3">
+					<label>
+						<input type="checkbox" value="remember-me"> Remember me
+					</label>
+				</div> -->
+				<p>Don't have a account ? <a href="/register/">Register</a></p>
+				<button class="w-100 btn btn-lg btn-dark" type="submit">Sign in</button>
+			</form>
+		</main>
+	</div>
+</body>
+
+{% endblock main_content %}
+
